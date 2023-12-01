@@ -31,7 +31,7 @@ A simple native WYSIWYG/Rich Text editor for Angular 6-12+
 Install via [npm][npm] package manager 
 
 ```bash
-npm install @kolkov/angular-editor --save
+npm i angular-editor-kapibara
 ```
 ### Versions
 
@@ -47,7 +47,7 @@ Import `angular-editor` module
 
 ```js
 import { HttpClientModule} from '@angular/common/http';
-import { AngularEditorModule } from '@kolkov/angular-editor';
+import { AngularEditorModule } from 'angular-editor-kapibara';
 
 @NgModule({
   imports: [ HttpClientModule, AngularEditorModule ]
@@ -76,7 +76,7 @@ if you using more than one editor on same page set `id` property
 where
 
 ```js
-import { AngularEditorConfig } from '@kolkov/angular-editor';
+import { AngularEditorConfig } from 'angular-editor-kapibara';
 
 
 editorConfig: AngularEditorConfig = {
