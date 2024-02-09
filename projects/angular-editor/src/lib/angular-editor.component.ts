@@ -216,6 +216,10 @@ export class AngularEditorComponent implements OnInit, ControlValueAccessor, Aft
     if ((!html || html === '<br>')) {
       html = '';
     }
+    if (this.config.clearBackgroundAndFont) {
+      html = html.replace(new RegExp("background-color: transparent;", "g"), "");
+      html = html.replace(new RegExp("font-family: Arial;", "g"), "");
+    }
     if (typeof this.onChange === 'function') {
       this.onChange(this.config.sanitize || this.config.sanitize === undefined ?
         this.sanitizer.sanitize(SecurityContext.HTML, html) : html);

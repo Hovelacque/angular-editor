@@ -37,7 +37,8 @@ export interface AngularEditorConfig {
   toolbarPosition?: 'top' | 'bottom';
   outline?: boolean;
   toolbarHiddenButtons?: string[][];
-  rawPaste?: boolean;
+  rawPaste?: boolean;  
+  clearBackgroundAndFont?: boolean;
 }
 
 export const angularEditorConfig: AngularEditorConfig = {
@@ -66,6 +67,7 @@ export const angularEditorConfig: AngularEditorConfig = {
   sanitize: true,
   toolbarPosition: 'top',
   outline: true,
+  clearBackgroundAndFont: false,
   /*toolbarHiddenButtons: [
     ['bold', 'italic', 'underline', 'strikeThrough', 'superscript', 'subscript'],
     ['heading', 'fontName', 'fontSize', 'color'],
