@@ -12,7 +12,7 @@ import { AeToolbarSetComponent } from './ae-toolbar-set/ae-toolbar-set.component
     CommonModule, FormsModule, ReactiveFormsModule
   ],
   declarations: [AngularEditorComponent, AngularEditorToolbarComponent, AeSelectComponent, AeButtonComponent, AeToolbarSetComponent],
-  exports: [AngularEditorComponent, AngularEditorToolbarComponent, AeButtonComponent, AeToolbarSetComponent]
+  exports: [AngularEditorComponent, AngularEditorToolbarComponent, AeSelectComponent, AeButtonComponent, AeToolbarSetComponent]
 })
 export class AngularEditorModule {
 }
